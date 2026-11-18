@@ -1,0 +1,19 @@
+* Commit everything
+* Tag everything
+* BACKUP ALL TO H:
+
+For the projects:
+	TheWorld_GDN_Viewer
+	TheWorld_MapManager
+	TheWorld_Utils
+	TheWorld_Viewer
+
+CREATE
+
+	* CD project directory
+	* git checkout -b wbranch
+
+ERASE
+
+	* CD project directory
+	* git branch -d wbranch

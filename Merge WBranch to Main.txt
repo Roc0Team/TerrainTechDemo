@@ -1,0 +1,17 @@
+BACKUP ALL TO H:
+
+For the projects:
+	TheWorld_GDN_Viewer
+	TheWorld_MapManager
+	TheWorld_Utils
+	TheWorld_Viewer
+	
+* CD project directory
+* Commit everything
+* git checkout main
+* git merge wbranch
+
+* Compile Solution
+
+* Optionally delete wbranch (git branch -d wbranch)
+* Optionally create/recreate wbranch (git checkout -b wbranch)

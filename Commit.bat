@@ -1,0 +1,114 @@
+@echo off
+set curpath=%~dp0
+
+set project=ConsoleMapManager
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	rem git push --tags
+	git status
+
+set project=TheWorld_GDN_Viewer
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	rem git push --tags
+	git status
+
+set project=TheWorld_MapManager
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	rem git push --tags
+	git status
+
+set project=TheWorld_MapManager_UnitTest
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	rem git push --tags
+	git status
+
+set project=TheWorld_Utils
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	rem git push --tags
+	git status
+
+set project=TheWorld_Viewer
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	rem git push --tags
+	git status
+
+rem set project=TheWorld_Assets
+rem 	echo %project%
+rem 	cd /D %curpath%\%project%
+rem 	git status
+rem 	git add *
+rem 	git status
+rem 	git commit -m wip
+rem 	rem git push --tags
+rem 	git status
+
+rem set project=TheWorld_ClientDll
+rem 	echo %project%
+rem 	cd /D %curpath%\%project%
+rem 	git status
+rem 	git add *
+rem 	git status
+rem 	git commit -m wip
+rem 	rem git push --tags
+rem 	git status
+
+rem set project=TheWorld_ConsoleClient
+rem 	echo %project%
+rem 	cd /D %curpath%\%project%
+rem 	git status
+rem 	git add *
+rem 	git status
+rem 	git commit -m wip
+rem 	rem git push --tags
+rem 	git status
+
+rem set project=TheWorld_GD_ClientDll
+rem 	echo %project%
+rem 	cd /D %curpath%\%project%
+rem 	git status
+rem 	git add *
+rem 	git status
+rem 	git commit -m wip
+rem 	rem git push --tags
+rem 	git status
+
+rem set project=TheWorldG
+rem 	echo %project%
+rem 	cd /D %curpath%\%project%
+rem 	git status
+rem 	git add *
+rem 	git status
+rem 	git commit -m wip
+rem 	rem git push --tags
+rem 	git status
+	
+pause
