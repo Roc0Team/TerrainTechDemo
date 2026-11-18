@@ -7,3 +7,6 @@
 [submodule "PROJ"]
 	path = PROJ
 	url = https://github.com/OSGeo/PROJ.git
+[submodule "jsoncpp"]
+	path = jsoncpp
+	url = https://github.com/open-source-parsers/jsoncpp.git
