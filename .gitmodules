@@ -1,3 +1,6 @@
 [submodule "plog"]
 	path = plog
 	url = https://github.com/SergiusTheBest/plog.git
+[submodule "GSL"]
+	path = GSL
+	url = https://github.com/microsoft/GSL.git
