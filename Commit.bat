@@ -27,6 +27,9 @@ set project=TerrainTechDemo
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
 	echo.
 
@@ -36,7 +39,11 @@ set project=TerrainTechDemo
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
@@ -71,7 +78,11 @@ set project=TheWorld_Viewer
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
@@ -79,7 +90,11 @@ set project=TheWorld_Viewer
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
@@ -114,7 +129,11 @@ set project=TheWorld_GDN_Viewer
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
@@ -122,7 +141,11 @@ set project=TheWorld_GDN_Viewer
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
@@ -157,7 +180,11 @@ set project=TheWorld_MapManager
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
@@ -165,7 +192,11 @@ set project=TheWorld_MapManager
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
@@ -200,7 +231,11 @@ set project=TheWorld_MapManager_UnitTest
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
@@ -208,7 +243,11 @@ set project=TheWorld_MapManager_UnitTest
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
@@ -243,7 +282,11 @@ set project=TheWorld_Utils
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
@@ -251,7 +294,11 @@ set project=TheWorld_Utils
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
@@ -286,7 +333,11 @@ set project=TheWorld_Utils_UnitTest
 	git status
 	echo.
 
+	echo ----------
+	echo git commit
+	echo ----------
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
@@ -294,7 +345,11 @@ set project=TheWorld_Utils_UnitTest
 	git status
 	echo.
 
+	if %commit% == S echo --------
+	if %commit% == S echo git push
+	if %commit% == S echo --------
 	if %commit% == S git push --tags
+	if %commit% == S echo.
 
 	if %commit% == S echo ----------------------
 	if %commit% == S echo git status (post push)
