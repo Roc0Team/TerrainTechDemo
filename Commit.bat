@@ -1,7 +1,15 @@
 @echo off
 
+set msg=%1
+if a%1 == a set msg=msg not set
+
 set commit=N
-if a%1 == aPush set commit=S
+if a%2 == aPush set commit=S
+
+echo.
+echo message = %msg%
+echo commit = %commit%
+echo.
 
 set curpath=%~dp0
 
@@ -30,7 +38,7 @@ set project=TerrainTechDemo
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
@@ -81,7 +89,7 @@ set project=TheWorld_Viewer
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
@@ -132,7 +140,7 @@ set project=TheWorld_GDN_Viewer
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
@@ -183,7 +191,7 @@ set project=TheWorld_MapManager
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
@@ -234,7 +242,7 @@ set project=TheWorld_MapManager_UnitTest
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
@@ -285,7 +293,7 @@ set project=TheWorld_Utils
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
@@ -336,7 +344,7 @@ set project=TheWorld_Utils_UnitTest
 	echo ----------
 	echo git commit
 	echo ----------
-	git commit -m wip
+	git commit -m "%msg%"
 	echo.
 
 	echo ------------------------
