@@ -24,48 +24,6 @@ set project=TerrainTechDemo
 	cd /D %curpath%
 
 	call :CommitAndPush "%msg%" "%push%"
-	pause
-
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
 echo *************************
 echo.
 
@@ -77,47 +35,7 @@ set project=TheWorld_Viewer
 
 	cd /D %curpath%\%project%
 
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-	echo.
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
+	call :CommitAndPush "%msg%" "%push%"
 echo *************************
 echo.
 
@@ -129,47 +47,7 @@ set project=TheWorld_GDN_Viewer
 
 	cd /D %curpath%\%project%
 
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-	echo.
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
+	call :CommitAndPush "%msg%" "%push%"
 echo *************************
 echo.
 
@@ -181,47 +59,7 @@ set project=TheWorld_MapManager
 
 	cd /D %curpath%\%project%
 
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-	echo.
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
+	call :CommitAndPush "%msg%" "%push%"
 echo *************************
 echo.
 
@@ -233,47 +71,7 @@ set project=TheWorld_MapManager_UnitTest
 
 	cd /D %curpath%\%project%
 
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-	echo.
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
+	call :CommitAndPush "%msg%" "%push%"
 echo *************************
 echo.
 
@@ -285,47 +83,7 @@ set project=TheWorld_Utils
 
 	cd /D %curpath%\%project%
 
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-	echo.
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
+	call :CommitAndPush "%msg%" "%push%"
 echo *************************
 echo.
 
@@ -337,47 +95,7 @@ set project=TheWorld_Utils_UnitTest
 
 	cd /D %curpath%\%project%
 
-	echo ----------
-	echo git status
-	echo ----------
-	git status
-	echo.
-
-	git add *
-	echo.
-
-	echo -------------------------
-	echo git status (post git add)
-	echo -------------------------
-	git status
-	echo.
-
-	echo ----------
-	echo git commit
-	echo ----------
-	git commit -m "%msg%"
-	echo.
-
-	echo ------------------------
-	echo git status (post commit)
-	echo ------------------------
-	git status
-	echo.
-
-	if %push% == S (
-		echo --------------------
-		echo git push (with tags)
-		echo --------------------
-		git push
-		git push --tags
-		echo.
-
-		echo ----------------------
-		echo git status (post push)
-		echo ----------------------
-		git status
-		echo.
-	)
+	call :CommitAndPush "%msg%" "%push%"
 echo *************************
 echo.
 
