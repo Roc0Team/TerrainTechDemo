@@ -1,54 +1,19 @@
 @echo off
+
+set commit=N
+if a%1 == aPush set commit=S
+
 set curpath=%~dp0
 
-set project=ConsoleMapManager
+set project=TerrainTechDemo
 	echo %project%
-	cd /D %curpath%\%project%
+	cd /D %curpath%
 	git status
 	git add *
 	git status
 	git commit -m wip
-	rem git push --tags
-	git status
-
-set project=TheWorld_GDN_Viewer
-	echo %project%
-	cd /D %curpath%\%project%
-	git status
-	git add *
-	git status
-	git commit -m wip
-	rem git push --tags
-	git status
-
-set project=TheWorld_MapManager
-	echo %project%
-	cd /D %curpath%\%project%
-	git status
-	git add *
-	git status
-	git commit -m wip
-	rem git push --tags
-	git status
-
-set project=TheWorld_MapManager_UnitTest
-	echo %project%
-	cd /D %curpath%\%project%
-	git status
-	git add *
-	git status
-	git commit -m wip
-	rem git push --tags
-	git status
-
-set project=TheWorld_Utils
-	echo %project%
-	cd /D %curpath%\%project%
-	git status
-	git add *
-	git status
-	git commit -m wip
-	rem git push --tags
+	if %commit% == S git push --tags
+	if %commit% == S pause
 	git status
 
 set project=TheWorld_Viewer
@@ -58,57 +23,63 @@ set project=TheWorld_Viewer
 	git add *
 	git status
 	git commit -m wip
-	rem git push --tags
+	if %commit% == S git push --tags
+	if %commit% == S pause
 	git status
 
-rem set project=TheWorld_Assets
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git status
-rem 	git add *
-rem 	git status
-rem 	git commit -m wip
-rem 	rem git push --tags
-rem 	git status
+set project=TheWorld_GDN_Viewer
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	if %commit% == S git push --tags
+	if %commit% == S pause
+	git status
 
-rem set project=TheWorld_ClientDll
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git status
-rem 	git add *
-rem 	git status
-rem 	git commit -m wip
-rem 	rem git push --tags
-rem 	git status
+set project=TheWorld_MapManager
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	if %commit% == S git push --tags
+	if %commit% == S pause
+	git status
 
-rem set project=TheWorld_ConsoleClient
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git status
-rem 	git add *
-rem 	git status
-rem 	git commit -m wip
-rem 	rem git push --tags
-rem 	git status
+set project=TheWorld_MapManager_UnitTest
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	if %commit% == S git push --tags
+	if %commit% == S pause
+	git status
 
-rem set project=TheWorld_GD_ClientDll
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git status
-rem 	git add *
-rem 	git status
-rem 	git commit -m wip
-rem 	rem git push --tags
-rem 	git status
+set project=TheWorld_Utils
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	if %commit% == S git push --tags
+	if %commit% == S pause
+	git status
 
-rem set project=TheWorldG
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git status
-rem 	git add *
-rem 	git status
-rem 	git commit -m wip
-rem 	rem git push --tags
-rem 	git status
-	
+set project=TheWorld_Utils_UnitTest
+	echo %project%
+	cd /D %curpath%\%project%
+	git status
+	git add *
+	git status
+	git commit -m wip
+	if %commit% == S git push --tags
+	if %commit% == S pause
+	git status
+
 pause

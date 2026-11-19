@@ -1,0 +1,1 @@
+Occorre copiare sqlite3.exe in questa cartella per la build di PROJ

@@ -1,68 +1,100 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Visual Studio user settings and IDE caches
+.vs/
+ipch/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+*.ncb
+*.sdf
+*.opensdf
+*.ipch
+CMakeUserPresets.json
 
 # Build directories
 [Bb]uild/
+# Keep the maintained solution and CMake entry point, not build outputs.
+!/build/
+/build/*
+!/build/CMakeLists.txt
+!/build/TerrainTechDemo.sln
 [Bb]uild-*/
 cmake-build-*/
+[Oo]ut/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Dd]ebugOptimized/
+[Rr]elease/
+[Rr]elWithDebInfo/
+[Mm]inSizeRel/
+x64/
+x86/
+[Ww]in32/
+[Aa][Rr][Mm]64/
 
-# CMake generated files
+# Compiled binaries and intermediate files
+*.exe
+*.dll
+*.lib
+*.obj
+*.exp
+*.ilk
+*.pdb
+*.idb
+*.pch
+*.res
+*.aps
+*.tlog
+*.lastbuildstate
+*.recipe
+*.iobj
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.d
+*.slo
+*.lo
+*.o
+*.gch
+*.so
+*.so.*
+*.dylib
+*.mod
+*.smod
+*.lai
+*.la
+*.a
+*.out
+*.app
+*.dwo
+
+# CMake, Ninja, and vcpkg generated files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 install_manifest.txt
 compile_commands.json
+build.ninja
+.ninja_deps
+.ninja_log
+vcpkg_installed/
+
+# Test results and diagnostic output
+Testing/
+[Tt]est[Rr]esults/
+*.trx
+*.coverage
+*.coveragexml
+*.dmp
+.cache/
 
 # Temporary files
 *.tmp
 *.log
 *.bak
 *.swp
-
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
