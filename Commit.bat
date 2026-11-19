@@ -7,9 +7,9 @@ set curpath=%~dp0
 
 echo *************************
 set project=TerrainTechDemo
-	echo --------------
+	echo.
 	echo %project%
-	echo --------------
+	echo.
 	cd /D %curpath%
 	echo --------------
 	echo git status
