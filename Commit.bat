@@ -12,7 +12,7 @@ echo message = %msg%
 echo push = %push%
 echo *************************
 echo.
-pause
+
 set curpath=%~dp0
 
 echo *************************
@@ -62,7 +62,7 @@ set project=TerrainTechDemo
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
@@ -114,7 +114,7 @@ set project=TheWorld_Viewer
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
@@ -166,7 +166,7 @@ set project=TheWorld_GDN_Viewer
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
@@ -218,7 +218,7 @@ set project=TheWorld_MapManager
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
@@ -270,7 +270,7 @@ set project=TheWorld_MapManager_UnitTest
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
@@ -322,7 +322,7 @@ set project=TheWorld_Utils
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
@@ -374,7 +374,7 @@ set project=TheWorld_Utils_UnitTest
 	if %push% == S git status
 	if %push% == S echo.
 
-	if %push% == S pause
+	rem if %push% == S pause
 echo *************************
 echo.
 
