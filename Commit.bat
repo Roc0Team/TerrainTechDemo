@@ -101,20 +101,20 @@ set project=TheWorld_Viewer
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 
@@ -153,20 +153,20 @@ set project=TheWorld_GDN_Viewer
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 
@@ -205,20 +205,20 @@ set project=TheWorld_MapManager
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 
@@ -257,20 +257,20 @@ set project=TheWorld_MapManager_UnitTest
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 
@@ -309,20 +309,20 @@ set project=TheWorld_Utils
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 
@@ -361,20 +361,20 @@ set project=TheWorld_Utils_UnitTest
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 
