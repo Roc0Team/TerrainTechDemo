@@ -7,15 +7,25 @@ set curpath=%~dp0
 
 echo *************************
 set project=TerrainTechDemo
+	echo --------------
 	echo %project%
+	echo --------------
 	cd /D %curpath%
+	echo --------------
 	echo git status
+	echo --------------
 	git status
 	git add *
+	echo --------------
+	echo git status
+	echo --------------
 	git status
 	git commit -m wip
 	if %commit% == S git push --tags
 	if %commit% == S pause
+	echo --------------
+	echo git status
+	echo --------------
 	git status
 echo *************************
 echo.
@@ -31,6 +41,8 @@ set project=TheWorld_Viewer
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 echo *************************
 set project=TheWorld_GDN_Viewer
@@ -43,6 +55,8 @@ set project=TheWorld_GDN_Viewer
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 echo *************************
 set project=TheWorld_MapManager
@@ -55,6 +69,8 @@ set project=TheWorld_MapManager
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 echo *************************
 set project=TheWorld_MapManager_UnitTest
@@ -67,6 +83,8 @@ set project=TheWorld_MapManager_UnitTest
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 echo *************************
 set project=TheWorld_Utils
@@ -79,6 +97,8 @@ set project=TheWorld_Utils
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 echo *************************
 set project=TheWorld_Utils_UnitTest
@@ -91,5 +111,7 @@ set project=TheWorld_Utils_UnitTest
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 pause
