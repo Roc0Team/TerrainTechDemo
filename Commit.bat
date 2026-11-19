@@ -49,9 +49,10 @@ set project=TerrainTechDemo
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
@@ -100,9 +101,10 @@ set project=TheWorld_Viewer
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
@@ -151,9 +153,10 @@ set project=TheWorld_GDN_Viewer
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
@@ -202,9 +205,10 @@ set project=TheWorld_MapManager
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
@@ -253,9 +257,10 @@ set project=TheWorld_MapManager_UnitTest
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
@@ -304,9 +309,10 @@ set project=TheWorld_Utils
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
@@ -355,9 +361,10 @@ set project=TheWorld_Utils_UnitTest
 	git status
 	echo.
 
-	if %commit% == S echo --------
-	if %commit% == S echo git push
-	if %commit% == S echo --------
+	if %commit% == S echo --------------------
+	if %commit% == S echo git push (with tags)
+	if %commit% == S echo --------------------
+	if %commit% == S git push
 	if %commit% == S git push --tags
 	if %commit% == S echo.
 
