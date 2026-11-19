@@ -1,14 +1,16 @@
 @echo off
 
-set msg=%1
+set msg=%~1
 if a%1 == a set msg=msg not set
 
 set commit=N
 if a%2 == aPush set commit=S
 
 echo.
+echo *************************
 echo message = %msg%
 echo commit = %commit%
+echo *************************
 echo.
 
 set curpath=%~dp0
@@ -368,5 +370,7 @@ set project=TheWorld_Utils_UnitTest
 	if %commit% == S pause
 echo *************************
 echo.
+
+cd /D %curpath%
 
 pause
