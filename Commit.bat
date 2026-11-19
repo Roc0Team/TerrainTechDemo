@@ -1,7 +1,7 @@
 @echo off
 
 set msg=%~1
-if "a%~1" == a set msg=msg not set
+if "%~1" == "" set msg=msg not set
 
 set push=N
 if a%~2 == aPush set push=S
@@ -49,20 +49,20 @@ set project=TerrainTechDemo
 	git status
 	echo.
 
-	if %push% == S echo --------------------
-	if %push% == S echo git push (with tags)
-	if %push% == S echo --------------------
-	if %push% == S git push
-	if %push% == S git push --tags
-	if %push% == S echo.
+	if %push% == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
 
-	if %push% == S echo ----------------------
-	if %push% == S echo git status (post push)
-	if %push% == S echo ----------------------
-	if %push% == S git status
-	if %push% == S echo.
-
-	rem if %push% == S pause
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
 echo *************************
 echo.
 

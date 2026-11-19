@@ -1,7 +1,7 @@
 @echo off
 
 set "msg=%~1"
-if "a%~1" == a set msg=msg not set
+if "%~1" == "" set msg=msg not set
 
 set curpath=%~dp0
 cd /D %curpath%
