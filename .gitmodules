@@ -10,3 +10,24 @@
 [submodule "jsoncpp"]
 	path = jsoncpp
 	url = https://github.com/open-source-parsers/jsoncpp.git
+[submodule "eigen"]
+	path = eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "TheWorld_Utils_UnitTest"]
+	path = TheWorld_Utils_UnitTest
+	url = https://github.com/Roc0Team/TheWorld_Utils_UnitTest.git
+[submodule "TheWorld_Utils"]
+	path = TheWorld_Utils
+	url = https://github.com/Roc0Team/TheWorld_Utils.git
+[submodule "TheWorld_MapManager_UnitTest"]
+	path = TheWorld_MapManager_UnitTest
+	url = https://github.com/Roc0Team/TheWorld_MapManager_UnitTest.git
+[submodule "TheWorld_MapManager"]
+	path = TheWorld_MapManager
+	url = https://github.com/Roc0Team/TheWorld_MapManager.git
+[submodule "TheWorld_GDN_Viewer"]
+	path = TheWorld_GDN_Viewer
+	url = https://github.com/Roc0Team/TheWorld_GDN_Viewer.git
+[submodule "TheWorld_Viewer"]
+	path = TheWorld_Viewer
+	url = https://github.com/Roc0Team/TheWorld_Viewer.git
