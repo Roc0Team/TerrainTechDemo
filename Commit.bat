@@ -17,6 +17,8 @@ set project=TerrainTechDemo
 	if %commit% == S git push --tags
 	if %commit% == S pause
 	git status
+echo *************************
+echo.
 
 echo *************************
 set project=TheWorld_Viewer
