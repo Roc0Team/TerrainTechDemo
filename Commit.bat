@@ -17,6 +17,7 @@ set project=TerrainTechDemo
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -24,6 +25,7 @@ set project=TerrainTechDemo
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -31,6 +33,7 @@ set project=TerrainTechDemo
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -38,6 +41,7 @@ set project=TerrainTechDemo
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
 echo *************************
@@ -55,6 +59,7 @@ set project=TheWorld_Viewer
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -62,6 +67,7 @@ set project=TheWorld_Viewer
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -69,6 +75,7 @@ set project=TheWorld_Viewer
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -76,6 +83,7 @@ set project=TheWorld_Viewer
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
 echo *************************
@@ -93,6 +101,7 @@ set project=TheWorld_GDN_Viewer
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -100,6 +109,7 @@ set project=TheWorld_GDN_Viewer
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -107,6 +117,7 @@ set project=TheWorld_GDN_Viewer
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -114,6 +125,7 @@ set project=TheWorld_GDN_Viewer
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
 echo *************************
@@ -131,6 +143,7 @@ set project=TheWorld_MapManager
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -138,6 +151,7 @@ set project=TheWorld_MapManager
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -145,6 +159,7 @@ set project=TheWorld_MapManager
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -152,6 +167,7 @@ set project=TheWorld_MapManager
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
 echo *************************
@@ -169,6 +185,7 @@ set project=TheWorld_MapManager_UnitTest
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -176,6 +193,7 @@ set project=TheWorld_MapManager_UnitTest
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -183,6 +201,7 @@ set project=TheWorld_MapManager_UnitTest
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -190,6 +209,7 @@ set project=TheWorld_MapManager_UnitTest
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
 echo *************************
@@ -207,6 +227,7 @@ set project=TheWorld_Utils
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -214,6 +235,7 @@ set project=TheWorld_Utils
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -221,6 +243,7 @@ set project=TheWorld_Utils
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -228,6 +251,7 @@ set project=TheWorld_Utils
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
 echo *************************
@@ -245,6 +269,7 @@ set project=TheWorld_Utils_UnitTest
 	echo git status
 	echo ----------
 	git status
+	echo.
 
 	git add *
 
@@ -252,6 +277,7 @@ set project=TheWorld_Utils_UnitTest
 	echo git status (post git add)
 	echo -------------------------
 	git status
+	echo.
 
 	git commit -m wip
 
@@ -259,6 +285,7 @@ set project=TheWorld_Utils_UnitTest
 	echo git status (post commit)
 	echo ------------------------
 	git status
+	echo.
 
 	if %commit% == S git push --tags
 
@@ -266,9 +293,9 @@ set project=TheWorld_Utils_UnitTest
 	if %commit% == S echo git status (post push)
 	if %commit% == S echo ----------------------
 	if %commit% == S git status
+	if %commit% == S echo.
 
 	if %commit% == S pause
-	echo ------------------------
 echo *************************
 echo.
 
