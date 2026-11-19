@@ -5,9 +5,11 @@ if a%1 == aPush set commit=S
 
 set curpath=%~dp0
 
+echo *************************
 set project=TerrainTechDemo
 	echo %project%
 	cd /D %curpath%
+	echo git status
 	git status
 	git add *
 	git status
@@ -16,6 +18,7 @@ set project=TerrainTechDemo
 	if %commit% == S pause
 	git status
 
+echo *************************
 set project=TheWorld_Viewer
 	echo %project%
 	cd /D %curpath%\%project%
@@ -27,6 +30,7 @@ set project=TheWorld_Viewer
 	if %commit% == S pause
 	git status
 
+echo *************************
 set project=TheWorld_GDN_Viewer
 	echo %project%
 	cd /D %curpath%\%project%
@@ -38,6 +42,7 @@ set project=TheWorld_GDN_Viewer
 	if %commit% == S pause
 	git status
 
+echo *************************
 set project=TheWorld_MapManager
 	echo %project%
 	cd /D %curpath%\%project%
@@ -49,6 +54,7 @@ set project=TheWorld_MapManager
 	if %commit% == S pause
 	git status
 
+echo *************************
 set project=TheWorld_MapManager_UnitTest
 	echo %project%
 	cd /D %curpath%\%project%
@@ -60,6 +66,7 @@ set project=TheWorld_MapManager_UnitTest
 	if %commit% == S pause
 	git status
 
+echo *************************
 set project=TheWorld_Utils
 	echo %project%
 	cd /D %curpath%\%project%
@@ -71,6 +78,7 @@ set project=TheWorld_Utils
 	if %commit% == S pause
 	git status
 
+echo *************************
 set project=TheWorld_Utils_UnitTest
 	echo %project%
 	cd /D %curpath%\%project%
