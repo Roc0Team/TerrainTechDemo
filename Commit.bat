@@ -20,6 +20,7 @@ set project=TerrainTechDemo
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -62,6 +63,7 @@ set project=TheWorld_Viewer
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -104,6 +106,7 @@ set project=TheWorld_GDN_Viewer
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -146,6 +149,7 @@ set project=TheWorld_MapManager
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -188,6 +192,7 @@ set project=TheWorld_MapManager_UnitTest
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -230,6 +235,7 @@ set project=TheWorld_Utils
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -272,6 +278,7 @@ set project=TheWorld_Utils_UnitTest
 	echo.
 
 	git add *
+	echo.
 
 	echo -------------------------
 	echo git status (post git add)
