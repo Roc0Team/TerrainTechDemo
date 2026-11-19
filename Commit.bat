@@ -23,6 +23,9 @@ set project=TerrainTechDemo
 
 	cd /D %curpath%
 
+	call :CommitAndPush "%msg%" "%push%"
+	pause
+
 	echo ----------
 	echo git status
 	echo ----------
@@ -381,3 +384,48 @@ echo.
 cd /D %curpath%
 
 pause
+goto :eof
+
+:CommitAndPush
+	echo ----------
+	echo git status
+	echo ----------
+	git status
+	echo.
+
+	git add *
+	echo.
+
+	echo -------------------------
+	echo git status (post git add)
+	echo -------------------------
+	git status
+	echo.
+
+	echo ----------
+	echo git commit
+	echo ----------
+	git commit -m "%~1"
+	echo.
+
+	echo ------------------------
+	echo git status (post commit)
+	echo ------------------------
+	git status
+	echo.
+
+	if %~2 == S (
+		echo --------------------
+		echo git push (with tags)
+		echo --------------------
+		git push
+		git push --tags
+		echo.
+
+		echo ----------------------
+		echo git status (post push)
+		echo ----------------------
+		git status
+		echo.
+	)
+goto :eof
