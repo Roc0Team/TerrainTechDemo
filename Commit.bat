@@ -20,7 +20,6 @@ set project=TerrainTechDemo
 	echo.
 
 	git add *
-	echo.
 
 	echo -------------------------
 	echo git status (post git add)
@@ -29,6 +28,7 @@ set project=TerrainTechDemo
 	echo.
 
 	git commit -m wip
+	echo.
 
 	echo ------------------------
 	echo git status (post commit)
