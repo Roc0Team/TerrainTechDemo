@@ -1,15 +1,15 @@
 @echo off
 
-set msg=%~1
-if "%~1" == "" set msg=msg not set
+set "msg=%~1"
+if "%~1"=="" set "msg=msg not set"
 
-set push=N
-if a%~2 == aPush set push=S
+set "push=N"
+if "a%~2" == "aPush" set "push=S"
 
 echo.
 echo *************************
-echo message = %msg%
-echo push = %push%
+echo message = [%msg%]
+echo push = [%push%]
 echo *************************
 echo.
 
@@ -139,14 +139,14 @@ goto :eof
 
 	if "%~2" == "S" (
 		echo --------------------
-		echo git push (with tags)
+		echo git push ^(with tags^)
 		echo --------------------
 		git push
 		git push --tags
 		echo.
 
 		echo ----------------------
-		echo git status (post push)
+		echo git status ^(post push^)
 		echo ----------------------
 		git status
 		echo.
