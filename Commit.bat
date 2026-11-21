@@ -1,4 +1,4 @@
-@echo off
+rem @echo off
 
 set msg=%~1
 if "%~1" == "" set msg=msg not set
@@ -14,18 +14,6 @@ echo *************************
 echo.
 
 set curpath=%~dp0
-
-echo *************************
-set project=TerrainTechDemo
-	echo.
-	echo %project%
-	echo.
-
-	cd /D %curpath%
-
-	call :CommitAndPush "%msg%" "%push%"
-echo *************************
-echo.
 
 echo *************************
 set project=TheWorld_Viewer
@@ -94,6 +82,18 @@ set project=TheWorld_Utils_UnitTest
 	echo.
 
 	cd /D %curpath%\%project%
+
+	call :CommitAndPush "%msg%" "%push%"
+echo *************************
+echo.
+
+echo *************************
+set project=TerrainTechDemo
+	echo.
+	echo %project%
+	echo.
+
+	cd /D %curpath%
 
 	call :CommitAndPush "%msg%" "%push%"
 echo *************************
