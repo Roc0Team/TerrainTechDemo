@@ -18,7 +18,7 @@ set curpath=%~dp0
 echo *************************
 set project=TheWorld_Viewer
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -30,7 +30,7 @@ echo.
 echo *************************
 set project=TheWorld_GDN_Viewer
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -42,7 +42,7 @@ echo.
 echo *************************
 set project=TheWorld_MapManager
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -54,7 +54,7 @@ echo.
 echo *************************
 set project=TheWorld_MapManager_UnitTest
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -66,7 +66,7 @@ echo.
 echo *************************
 set project=TheWorld_Utils
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -78,7 +78,7 @@ echo.
 echo *************************
 set project=TheWorld_Utils_UnitTest
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -90,7 +90,7 @@ echo.
 echo *************************
 set project=TerrainTechDemo
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%
@@ -111,8 +111,8 @@ goto :eof
 	git status
 	echo.
 
-	rem echo %~1
-	rem echo %~2
+	rem echo "msg=%~1"
+	rem echo "push=%~2"
 	
 	git add *
 	echo.
@@ -135,8 +135,6 @@ goto :eof
 	git status
 	echo.
 	
-	rem pause
-
 	if "%~2" == "S" (
 		echo --------------------
 		echo git push ^(with tags^)
