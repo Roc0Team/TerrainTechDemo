@@ -1,7 +1,25 @@
+echo to UPDATE
+pause
+
 @echo off
 set curpath=%~dp0
 
 set TAG=wip-2026-09-28
+
+set project=TheWorld_Viewer
+	echo %project%
+	cd /D %curpath%\%project%
+	git tag -d %TAG%
+
+set project=TerrainTechDemo
+	echo %project%
+	cd /D %curpath%
+	git tag -d %TAG%
+
+set project=TheWorld_Viewer
+	echo %project%
+	cd /D %curpath%\%project%
+	git tag -d %TAG%
 
 set project=TheWorld_GDN_Viewer
 	echo %project%
@@ -13,49 +31,19 @@ set project=TheWorld_MapManager
 	cd /D %curpath%\%project%
 	git tag -d %TAG%
 
+set project=TheWorld_MapManager_UnitTest
+	echo %project%
+	cd /D %curpath%\%project%
+	git tag -d %TAG%
+
 set project=TheWorld_Utils
 	echo %project%
 	cd /D %curpath%\%project%
 	git tag -d %TAG%
 
-set project=TheWorld_Viewer
+set project=TheWorld_Utils_UnitTest
 	echo %project%
 	cd /D %curpath%\%project%
 	git tag -d %TAG%
 
-rem set project=ConsoleMapManager
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-
-rem set project=TheWorld_MapManager_UnitTest
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-
-rem set project=TheWorld_Assets
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-
-rem set project=TheWorld_ClientDll
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-
-rem set project=TheWorld_ConsoleClient
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-
-rem set project=TheWorld_GD_ClientDll
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-
-rem set project=TheWorldG
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git tag -d %TAG%
-	
 pause
