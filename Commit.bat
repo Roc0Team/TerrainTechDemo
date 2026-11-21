@@ -1,4 +1,4 @@
-rem @echo off
+@echo off
 
 set msg=%~1
 if "%~1" == "" set msg=msg not set
