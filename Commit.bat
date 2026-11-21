@@ -111,8 +111,8 @@ goto :eof
 	git status
 	echo.
 
-	echo %~1
-	echo %~2
+	rem echo %~1
+	rem echo %~2
 	
 	git add *
 	echo.
@@ -134,9 +134,10 @@ goto :eof
 	echo ------------------------
 	git status
 	echo.
+	
+	rem pause
 
 	if "%~2" == "S" (
-		pause
 		echo --------------------
 		echo git push (with tags)
 		echo --------------------
