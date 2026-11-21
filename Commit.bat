@@ -135,7 +135,8 @@ goto :eof
 	git status
 	echo.
 
-	if %~2 == S (
+	if "%~2" == "S" (
+		pause
 		echo --------------------
 		echo git push (with tags)
 		echo --------------------
