@@ -11,3 +11,7 @@ cmake --build .\build\out\cmake --config Debug --target TerrainTechDemo --parall
 ```
 
 PROJ needs `sqlite3.exe` at build time to generate its database. Place a local copy in `DipendenzeEsterne\sqlite3.exe` or make it available on PATH. The executable is intentionally ignored and is not included in the repository.
+
+## Creating an empty Map
+
+- 
