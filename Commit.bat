@@ -1,36 +1,24 @@
 @echo off
 
-set msg=%~1
-if "%~1" == "" set msg=msg not set
+set "msg=%~1"
+if "%~1"=="" set "msg=msg not set"
 
-set push=N
-if a%~2 == aPush set push=S
+set "push=N"
+if "a%~2" == "aPush" set "push=S"
 
 echo.
 echo *************************
-echo message = %msg%
-echo push = %push%
+echo message = [%msg%]
+echo push = [%push%]
 echo *************************
 echo.
 
 set curpath=%~dp0
 
 echo *************************
-set project=TerrainTechDemo
-	echo.
-	echo %project%
-	echo.
-
-	cd /D %curpath%
-
-	call :CommitAndPush "%msg%" "%push%"
-echo *************************
-echo.
-
-echo *************************
 set project=TheWorld_Viewer
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -42,7 +30,7 @@ echo.
 echo *************************
 set project=TheWorld_GDN_Viewer
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -54,7 +42,7 @@ echo.
 echo *************************
 set project=TheWorld_MapManager
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -66,7 +54,7 @@ echo.
 echo *************************
 set project=TheWorld_MapManager_UnitTest
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -78,7 +66,7 @@ echo.
 echo *************************
 set project=TheWorld_Utils
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
@@ -90,10 +78,22 @@ echo.
 echo *************************
 set project=TheWorld_Utils_UnitTest
 	echo.
-	echo %project%
+	echo [%project%]
 	echo.
 
 	cd /D %curpath%\%project%
+
+	call :CommitAndPush "%msg%" "%push%"
+echo *************************
+echo.
+
+echo *************************
+set project=TerrainTechDemo
+	echo.
+	echo [%project%]
+	echo.
+
+	cd /D %curpath%
 
 	call :CommitAndPush "%msg%" "%push%"
 echo *************************
@@ -111,6 +111,9 @@ goto :eof
 	git status
 	echo.
 
+	rem echo "msg=%~1"
+	rem echo "push=%~2"
+	
 	git add *
 	echo.
 
@@ -131,17 +134,17 @@ goto :eof
 	echo ------------------------
 	git status
 	echo.
-
-	if %~2 == S (
+	
+	if "%~2" == "S" (
 		echo --------------------
-		echo git push (with tags)
+		echo git push ^(with tags^)
 		echo --------------------
 		git push
 		git push --tags
 		echo.
 
 		echo ----------------------
-		echo git status (post push)
+		echo git status ^(post push^)
 		echo ----------------------
 		git status
 		echo.

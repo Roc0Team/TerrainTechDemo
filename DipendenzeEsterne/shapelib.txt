@@ -1,0 +1,1 @@
+Progetto open-source Shapelib al momento non so se serva o meno, se servisse scaricare il prgetto da GitUhb come submodule e aggiungerlo alla solution

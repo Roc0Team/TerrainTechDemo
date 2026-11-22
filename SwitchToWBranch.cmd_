@@ -1,70 +1,48 @@
 @echo off
 set curpath=%~dp0
 
-set project=TheWorld_GDN_Viewer
-	echo %project%
-	cd /D %curpath%\%project%
-	git checkout wbranch
-	git branch -a
+rem se none siste wbranch prima lo crea con l'opzione -c se la creazione fallisce perché esiste già fa solo lo switch (l'operatore || fa eseguire ils econdo comando solo se il primo va in errore)
 
-set project=TheWorld_MapManager
+set project=TerrainTechDemo
 	echo %project%
-	cd /D %curpath%\%project%
-	git checkout wbranch
-	git branch -a
-
-set project=TheWorld_Utils
-	echo %project%
-	cd /D %curpath%\%project%
-	git checkout wbranch
+	cd /D %curpath%
+	git switch -c wbranch 2>nul || git switch wbranch
 	git branch -a
 
 set project=TheWorld_Viewer
 	echo %project%
 	cd /D %curpath%\%project%
-	git checkout wbranch
+	git switch -c wbranch 2>nul || git switch wbranch
 	git branch -a
 
-rem set project=ConsoleMapManager
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
+set project=TheWorld_GDN_Viewer
+	echo %project%
+	cd /D %curpath%\%project%
+	git switch -c wbranch 2>nul || git switch wbranch
+	git branch -a
 
-rem set project=TheWorld_MapManager_UnitTest
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
+set project=TheWorld_MapManager
+	echo %project%
+	cd /D %curpath%\%project%
+	git switch -c wbranch 2>nul || git switch wbranch
+	git branch -a
 
-rem set project=TheWorld_Assets
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
+set project=TheWorld_MapManager_UnitTest
+	echo %project%
+	cd /D %curpath%\%project%
+	git switch -c wbranch 2>nul || git switch wbranch
+	git branch -a
 
-rem set project=TheWorld_ClientDll
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
+set project=TheWorld_Utils
+	echo %project%
+	cd /D %curpath%\%project%
+	git switch -c wbranch 2>nul || git switch wbranch
+	git branch -a
 
-rem set project=TheWorld_ConsoleClient
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
+set project=TheWorld_Utils_UnitTest
+	echo %project%
+	cd /D %curpath%\%project%
+	git switch -c wbranch 2>nul || git switch wbranch
+	git branch -a
 
-rem set project=TheWorld_GD_ClientDll
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
-
-rem set project=TheWorldG
-rem 	echo %project%
-rem 	cd /D %curpath%\%project%
-rem 	git checkout wbranch
-rem 	git branch -a
-	
 pause
